@@ -18,7 +18,7 @@ public class UserController {
     @Autowired
     private UserBusiness mBusiness;
 
-    @GetMapping("")
+    @GetMapping("/get")
     public ResponseEntity<UserInformation> getInfor() {
         return ResponseEntity.status(HttpStatus.OK).contentType(MediaType.APPLICATION_JSON)
                 .body(mBusiness.getUserInformation());
