@@ -15,4 +15,9 @@ public class UserBusiness {
         return mInformation;
     }
 
+    public String showUserInformation(int num1, int num2) {
+        int result = num1 + num2;
+        return "Result :" + result;
+    }
+
 }
