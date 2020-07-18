@@ -4,9 +4,10 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection = "user_info")
 public class UserInformation {
+
+    private int age;
     private String id;
     private String name;
-    private int age;
 
     public String getId() {
         return this.id;

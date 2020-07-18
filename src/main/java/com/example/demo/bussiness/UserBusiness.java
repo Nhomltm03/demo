@@ -39,4 +39,8 @@ public class UserBusiness {
         return this.mongoTemplate.findOne(new Query(Criteria.where("name").is(userName)), UserInformation.class);
     }
 
+    public UserInformation getUseName(String userName) {
+        return this.mRepository.findUserByName(userName);
+    }
+
 }
